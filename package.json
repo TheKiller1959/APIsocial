@@ -1,0 +1,19 @@
+{
+  "name": "apisocial",
+  "version": "1.0.0",
+  "description": "API for a social network",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheKiller1959/APIsocial.git"
+  },
+  "author": "TheKiller1959",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheKiller1959/APIsocial/issues"
+  },
+  "homepage": "https://github.com/TheKiller1959/APIsocial#readme"
+}
