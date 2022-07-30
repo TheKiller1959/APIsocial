@@ -1,0 +1,155 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "TheKiller1959 API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/users": {
+      "get": {
+        "description": "Hacer un get de mis usuarios",
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "jwt_token": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Listamos todos los usuarios de manera exitosa"
+          },
+          "401": {
+            "description": "No estas autorizado para ver esta informacion"
+          }
+        }
+      },
+      "post": {
+        "description": "Hacer un post de un usuario",
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "jwt_token": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Datos del usuario",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Creamos un usuario de manera exitosa"
+          },
+          "400": {
+            "description": "Error al crear el usuario"
+          }
+        }
+      }
+    },
+    "/api/v1/users/{id}": {
+      "get": {
+        "description": "Hacer un get de un usuario",
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "jwt_token": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id del usuario",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Listamos un usuario de manera exitosa"
+          },
+          "404": {
+            "description": "No se encontro el usuario"
+          }
+        }
+      },
+      "put": {
+        "description": "Hacer un put de un usuario",
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "jwt_token": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id del usuario",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Datos del usuario",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Actualizamos un usuario de manera exitosa"
+          },
+          "404": {
+            "description": "No se encontro el usuario"
+          }
+        }
+      },
+      "delete": {
+        "description": "Hacer un delete de un usuario",
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "jwt_token": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id del usuario",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Eliminamos un usuario de manera exitosa"
+          },
+          "404": {
+            "description": "El usuario no existe"
+          }
+        }
+      }
+    }
+  }
+}
