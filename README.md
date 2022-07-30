@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to apisocial 👋</h1>
+<h1 align="center">Welcome to APIsocial 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://academlo.notion.site/Restaurant-576db13c65354a739fca04ecde0bd60c" target="_blank">
@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> This is an API REST of a social network
+> This is an API REST of a social network, developed by TheKiller1959
 
 ## Install
 
